@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Inline Styles Remover</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="dependencies/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+    <script src="dependencies/jquery.min.js"></script>
+    <script src="dependencies/bootstrap.min.js"></script>
+
+    <script src="inlineStylesRemover.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mainBody">
+            <div class="col-sm-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4>Choose File To Transform : </h4>
+                    </div>
+                    <div class="panel-body">
+                        <input id="fileBrowser" type="file" name="fileBrowser" class="form-control" onchange="checkExtension(this,'html');" />
+                    </div>
+                    <div class="panel-footer">
+                        <button onclick="transform()" class="pull-right btn btn-primary">Transform</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-6">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h4>Transformed Html : </h4>
+                    </div>
+                    <div class="panel-body">
+                        <textarea id="textOutput" class="form-control"></textarea>
+                    </div>
+                    <div class="panel-footer">
+                        <button onclick="exportFile()" class="btn btn-success pull-right">Export</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <iframe id="hiddenFrame" ></iframe>
+</body>
+
+</html>

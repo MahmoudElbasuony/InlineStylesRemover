@@ -1,0 +1,16 @@
+.mainBody{
+    margin-top: 50px;
+}
+
+#textOutput{
+    resize: vertical;
+    height: 300px;
+}
+
+#hiddenFrame{
+    display: none;
+}
+
+.panel-footer{
+    overflow: hidden;
+}
