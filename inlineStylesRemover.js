@@ -17,7 +17,26 @@ const Selectors = [
     "wrap",
     "hidden",
     "border",
-    "bgcolor"
+    "bgcolor",
+    'cellpadding',
+    'cellspacing',
+    'color',
+    'face',
+    'hspace',
+    'marginheight',
+    'marginwidth',
+    'noshade',
+    'nowrap',
+    'valign',
+    'vspace',
+    'vlink',
+    'alink',
+    'text',
+    'link',
+    'frame',
+    'frameborder',
+    'clear',
+    'scrolling'
 ]
 
 function CleanUp(container) {
